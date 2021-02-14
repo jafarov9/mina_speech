@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_standart_bg">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/_settings"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/profile_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView23"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/settingsProfileImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/txtProfilePanelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/settingsProfileImage"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtProfilePanelDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtProfilePanelName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/settingsProfileImage" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrSettinsButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_panel"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnGeneralSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_buttons_background"
+            android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/_general"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnReligionSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_buttons_background"
+            android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/_Religion"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnTermsSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_buttons_background"
+            android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/_terms"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnOurAppsSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_buttons_background"
+            android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/_our_apps"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnContactUsSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_buttons_background"
+            android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/_contact_us"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnLogOutSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_settings_buttons_background"
+            android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/_logout"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

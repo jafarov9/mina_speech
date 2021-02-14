@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnrCalendarEvents"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/imgCalendarEvents"
+                android:layout_width="105dp"
+                android:layout_height="108dp"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/xcxxc" />
+
+            <TextView
+                android:id="@+id/txtCalendarEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgCalendarEvents"
+                android:text="The Awe-Inspiring St Paul’s Cathedral"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarCalendarEvent"
+                style="?attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/txtCalendarEventName"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imgCalendarEvents"
+                android:paddingTop="2dp"
+                android:progressTint="@android:color/holo_orange_dark"
+                android:rating="4" />
+
+            <TextView
+                android:id="@+id/txtGoingCalendarEvent"
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/txtCalendarEventName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:text="24 will going"
+                android:textAlignment="viewEnd"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_below="@id/ratingBarCalendarEvent"
+                android:layout_alignParentBottom="false"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imgCalendarEvents"
+                app:srcCompat="@drawable/ic_place_map" />
+
+            <TextView
+                android:id="@+id/txtLocationCalendarEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_below="@id/ratingBarCalendarEvent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imageView12"
+                android:text="Heyder Aliyev Center"
+                android:textAlignment="center"
+                android:textColor="#BEC2CE"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

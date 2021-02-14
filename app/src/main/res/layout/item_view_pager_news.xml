@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/_standart_bg"
+                    android:padding="16dp"
+                    tools:context=".activity.NewsAudioPlayActivity">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgNewsAudioPlay"
+                        android:layout_width="264dp"
+                        android:layout_height="264dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/news__da">
+
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <TextView
+                        android:id="@+id/txtAudioNewsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgNewsAudioPlay"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Washington DC was colapsed"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtAudioNewsCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtAudioNewsTitle"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Vivamus rhoncus hendrerit lacus, vitae porttitor odio pellentesque."
+                        android:textAlignment="center"
+                        android:textColor="#313B4A"
+                        android:textSize="16sp"
+                        app:lineHeight="26sp" />
+
+                    <LinearLayout
+                        android:id="@+id/lnrHorAudioNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtAudioNewsCategory"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <SeekBar
+                            android:id="@+id/seekBarAudioNews"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:progress="20"
+                            android:progressTint="#E4234B"
+                            android:secondaryProgressTint="#787C85"
+                            android:thumbTint="#C6C6CA" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/iButtonReplayAudioNews"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                app:srcCompat="@drawable/ic_replay" />
+
+                            <ImageButton
+                                android:id="@+id/iButtonFastRewindAudioNews"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                app:srcCompat="@drawable/ic_fast_rewind" />
+
+                            <ImageButton
+                                android:id="@+id/iButtonPlayAudioNews"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                app:srcCompat="@drawable/ic_play" />
+
+                            <ImageButton
+                                android:id="@+id/iButtonFastForwardAudioNews"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                app:srcCompat="@drawable/ic_fast_forward" />
+
+                            <ImageButton
+                                android:id="@+id/iButtonShuffleAudioNews"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                app:srcCompat="@drawable/ic_shuffle" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtNewsContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lnrHorAudioNews"
+                        android:layout_marginTop="15dp"
+                        android:text="TextView"
+                        android:textColor="#313B4A"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+
+
+
+

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hajma.apps.mina2">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".A"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="q">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ar.ARActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".fragment.WakeUp"
+            android:screenOrientation="locked"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true" />
+        <activity
+            android:name=".activity.AlarmActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.BrowserActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.MyDetailedAudioBookActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.DetailedBookActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.BooksActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.TeachMeActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.SubTutorialActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.DistanceFromActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.DetailedNews"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.EventFromDate"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.NamazTimeMonthly"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.CalendarActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.DuaListCardActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.NewsAudioPlayActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.PlaceEventsActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.TodayDuaActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.PlaceInsideActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.StopWatchActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.QiblaActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.CompassActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.ClockActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.WeatherActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.BrainActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.NamazTimeDay"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.TutorialActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.AskToMina"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.WhatIsMinaActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.LanguageActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="locked">
+
+        </activity>
+
+        <receiver android:name=".receiver.AlarmReceiver" />
+
+        <service android:name=".service.AlarmService" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="locked" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

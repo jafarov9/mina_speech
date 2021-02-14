@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_standart_bg"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                tools:context=".activity.WhatIsMinaActivity">
+
+                <RelativeLayout
+                    android:id="@+id/relativeStarTriangle"
+                    android:layout_width="320dp"
+                    android:layout_height="300dp"
+                    android:layout_centerHorizontal="true">
+
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieExplore"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="false"
+                        app:lottie_rawRes="@raw/explore" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relativeStarTriangle"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/_what_is_mina"
+                    android:textColor="#2D3747"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView3"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/_click_next"
+                    android:textColor="#6E81A0"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnNextWhatIsMina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView4"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/btn_get_started_bg"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/_next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_text_color"
+                    android:textSize="21sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
+
+
+

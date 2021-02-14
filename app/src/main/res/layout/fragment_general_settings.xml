@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/_standart_bg"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/textView313131"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etPasswordGeneralSettings"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="5dp"
+                    android:text="@string/_confirm_password"
+                    android:textColor="#22242A" />
+
+                <EditText
+                    android:id="@+id/etConfirmPasswordGeneralSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView313131"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:inputType="textPassword"
+                    android:textColor="#22242A" />
+
+                <TextView
+                    android:id="@+id/textView3030"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etEmailGeneralSettings"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="5dp"
+                    android:text="@string/_password"
+                    android:textColor="#22242A" />
+
+                <EditText
+                    android:id="@+id/etPasswordGeneralSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView3030"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:inputType="textPassword"
+                    android:textColor="#22242A" />
+
+                <TextView
+                    android:id="@+id/textView1616"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etGenderGeneralSettings"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="5dp"
+                    android:text="@string/_email_adress"
+                    android:textColor="#22242A" />
+
+                <EditText
+                    android:id="@+id/etEmailGeneralSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView1616"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#22242A" />
+
+                <TextView
+                    android:id="@+id/textView282322"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etUsernameGeneralSettings"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="5dp"
+                    android:text="@string/_gender"
+                    android:textColor="#22242A" />
+
+                <EditText
+                    android:id="@+id/etGenderGeneralSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView282322"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:inputType="textPersonName"
+                    android:textColor="#22242A" />
+
+                <TextView
+                    android:id="@+id/textView27343"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etNameGeneralSettings"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="5dp"
+                    android:text="@string/_username"
+                    android:textColor="#22242A" />
+
+                <EditText
+                    android:id="@+id/etUsernameGeneralSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView27343"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:inputType="textPersonName"
+                    android:textColor="#22242A" />
+
+                <EditText
+                    android:id="@+id/etNameGeneralSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView2623"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:inputType="textPersonName"
+                    android:textColor="#22242A" />
+
+                <TextView
+                    android:id="@+id/textView2623"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgPanelGeneralSettings"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingStart="5dp"
+                    android:text="@string/_name"
+                    android:textColor="#22242A" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_bold"
+                    android:text="@string/_profile_settings"
+                    android:textColor="#000000"
+                    android:textSize="35sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/imgPanelGeneralSettings"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/textView25"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgGeneralSettingsPicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_account_circle_black_24dp">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <ImageButton
+                        android:id="@+id/iButtonChangeProfilePicture"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/round_button"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+

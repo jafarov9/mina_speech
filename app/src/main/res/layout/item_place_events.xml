@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnrPlaceEventsCard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgPlaceEventCover"
+                android:layout_width="162dp"
+                android:layout_height="117dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/dfsdfdf" />
+
+            <TextView
+                android:id="@+id/txtPlaceEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgPlaceEventCover"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat"
+                android:maxWidth="160dp"
+                android:text="Movida Lounge"
+                android:textColor="#173143"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtPlaceEventTags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPlaceEventName"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat"
+                android:maxWidth="160dp"
+                android:text="#Restaurant #Pub"
+                android:textColor="#7F8FA6" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_below="@id/txtPlaceEventTags"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_map_icon" />
+
+            <TextView
+                android:id="@+id/txtPlaceEventWhere"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_below="@id/txtPlaceEventTags"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imageView11"
+                android:fontFamily="@font/montserrat"
+                android:text="Port Baku Mall"
+                android:textAlignment="center"
+                android:textColor="#7F8FA6" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

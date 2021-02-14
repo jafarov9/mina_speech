@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="_standart_bg">#E4F0FA</color>
+
+    <color name="btn_text_color">#2E476E</color>
+
+    <color name="_namaz_text_color">#358103</color>
+    <color name="text_colors">#333333</color>
+    <color name="line_selected">#333333</color>
+    <color name="line_colors">#D8D8D8</color>
+
+    <color name="colorBtnFreeBackground">#FB2231</color>
+    <color name="colorBtnReadBackground">#FB7022</color>
+    <color name="colorBtnPricebackground">#EAF4FF</color>
+
+    <color name="colorSolidGreen">#50E3C2</color>
+    <color name="colorGrey">#EBEBEB</color>
+    <color name="colorForButton">#448AFF</color>
+    <color name="colorTutorial">#3a315c</color>
+    <color name="colorForDua">#AF6847</color>
+
+
+</resources>

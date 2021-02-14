@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_standart_bg">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottiBackWeather"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/round_wave" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lottiBackWeather"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:id="@+id/txtWeatherLocate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_bold"
+                    android:maxWidth="200dp"
+                    android:text="BAKU, AZ"
+                    android:textColor="#000000"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/txtCurrentWeatherTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtWeatherLocate"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="80dp"
+                    android:fontFamily="@font/rubik_bold"
+                    android:text="34 *"
+                    android:textColor="#000000"
+                    android:textSize="32sp" />
+
+                <ImageView
+                    android:id="@+id/imgCurrentWeather"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/txtCurrentWeatherTemp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/weather" />
+
+                <TextView
+                    android:id="@+id/txtWeatherInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgCurrentWeather"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/athiti"
+                    android:maxWidth="250dp"
+                    android:text="Today"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    app:lineHeight="26dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFourWeathers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtWeatherInfo"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rvFourWeathers"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/rubik_bold"
+                    android:text="10 days"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvNextTenDaysWeather"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/textView11"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

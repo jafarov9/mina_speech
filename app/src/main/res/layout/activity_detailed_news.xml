@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/_standart_bg"
+                android:padding="16dp"
+                tools:context=".activity.DetailedNews">
+
+                <ImageButton
+                    android:id="@+id/iButtonBackFromDtNews"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/ic_backarrow" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_below="@id/iButtonBackFromDtNews"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/newstemp" />
+
+                <TextView
+                    android:id="@+id/txtDetailedNewsContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView13"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/athiti"
+                    android:text="Fusce in metus non urna malesuada dignissim sed sit amet magna. Aliquam vel tortor viverra, in at consectetur nunc vitae, efficitur mi etiam eu.   Consequat eros eu pretium commodo. Nunc a nunc erat. Donec vel erat at nunc imperdiet ornare erat. Nulla facilisis mollis neque nec finibus. In eu diam quam. Morbi semper orci eu feugiat luctus viverre.   Phasellus et interdum nisi, sed dapibus magna et Vivamus luctus eros in libero fermentum, dapibus gravida odio ultrices. Vestibulum semper convallis."
+                    android:textColor="#313B4A"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+

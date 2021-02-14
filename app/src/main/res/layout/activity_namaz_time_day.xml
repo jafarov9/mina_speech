@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_standart_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                tools:context=".activity.NamazTimeDay">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottiBackNamazTimeDay"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/round_wave" />
+
+
+                <TextView
+                    android:id="@+id/txtPrayerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lottiBackNamazTimeDay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/rubik_bold"
+                    android:text="@string/_todays_prayer"
+                    android:textColor="@color/_namaz_text_color"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/txtPrayerDay"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtPrayerName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Loren ipson Loren ipsonLoren ipsonLoren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren ipsonLoren ipsonLoren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren ipson Loren "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:lineHeight="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/lnrHorizontal1"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtPrayerDay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtCurrentNamazName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Zöhr"
+                            android:textColor="@color/_namaz_text_color"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/txtNamazii"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Namazi"
+                            android:textColor="@color/_namaz_text_color"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#979797" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtCurrentNamazTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="15:00"
+                            android:textColor="@color/_namaz_text_color"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/txtCurrentLocaleName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Baki vaxti ile"
+                            android:textColor="@color/_namaz_text_color"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnrHorizontal1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="35dp"
+                    android:text="@string/_prayer_times"
+                    android:textColor="@color/_namaz_text_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/lnrVertical1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView9"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtSubhTime"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="06:35"
+                            android:textAlignment="center"
+                            android:textColor="@color/_namaz_text_color" />
+
+                        <TextView
+                            android:id="@+id/txtZohrTime"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="13:42"
+                            android:textAlignment="center"
+                            android:textColor="@color/_namaz_text_color" />
+
+                        <TextView
+                            android:id="@+id/txtAsrTime"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="16:42"
+                            android:textAlignment="center"
+                            android:textColor="@color/_namaz_text_color" />
+
+                        <TextView
+                            android:id="@+id/txtShamTime"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="18:42"
+                            android:textAlignment="center"
+                            android:textColor="@color/_namaz_text_color" />
+
+                        <TextView
+                            android:id="@+id/txtHiftanTime"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="20:33"
+                            android:textAlignment="center"
+                            android:textColor="@color/_namaz_text_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/_subh_prayer"
+                            android:textAlignment="center"
+                            android:textColor="@color/_namaz_text_color"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/_zohr_prayer"
+                            android:textAlignment="center"
+                            android:textColor="@color/_namaz_text_color"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/_asr_prayer"
+                            android:textAlignment="center"
+                            android:textColor="@color/_namaz_text_color"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/_sham_prayer"
+                            android:textAlignment="center"
+                            android:textColor="@color/_namaz_text_color"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/_hiftan_prayer"
+                            android:textAlignment="center"
+                            android:textColor="@color/_namaz_text_color"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnrVertical1"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/macid" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

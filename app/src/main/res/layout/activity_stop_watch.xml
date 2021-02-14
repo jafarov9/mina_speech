@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_standart_bg"
+    android:padding="16dp"
+    tools:context=".activity.StopWatchActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottiBackStopWatch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/round_wave" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_stopwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottiBackStopWatch"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/stopwatch_bg">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgStopWatchMile"
+            android:layout_width="wrap_content"
+            android:layout_height="185dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:scaleType="fitStart"
+            android:src="@drawable/arrows">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_lens_black_24dp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnStartStopWatch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/chronometer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/stopwatch_buttons"
+        android:backgroundTint="#A795DE"
+        android:fontFamily="@font/roboto_bold"
+        android:scrollbarDefaultDelayBeforeFade="0"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="0dp"
+        android:text="@string/_start"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLapStopWatch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/chronometer"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/stopwatch_buttons"
+        android:backgroundTint="#85D8C9"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Lap"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_stopwatch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="00:00"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_standart_bg"
+    android:padding="16dp"
+    tools:context=".activity.SubTutorialActivity">
+
+    <ImageButton
+        android:id="@+id/iButtonBackSubTutorial"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_backarrow" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottiBackSubTutorial"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/round_wave" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSubTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iButtonBackSubTutorial"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

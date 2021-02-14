@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:waveview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_standart_bg"
+    android:padding="15dp"
+    tools:context=".activity.MainActivity" >
+
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:id="@+id/mLazyLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:lazyloader_animDur="800"
+        app:lazyloader_dotsDist="10dp"
+        app:lazyloader_dotsRadius="10dp"
+        app:lazyloader_firstDelayDur="150"
+        app:lazyloader_firstDotColor="@android:color/holo_red_dark"
+        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+        app:lazyloader_secondDelayDur="300"
+        app:lazyloader_secondDotColor="@android:color/holo_blue_dark"
+        app:lazyloader_thirdDotColor="@android:color/holo_green_dark" />
+
+    <ImageButton
+        android:id="@+id/iButtonTutorials"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_info_icon" />
+
+    <ImageButton
+        android:id="@+id/iButtonBehavior"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_behavior" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iButtonMicrophone"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/round_wave"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:id="@+id/lnrSuggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lnrSiriWave"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSuggestions"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnrSiriWave"
+        android:layout_above="@id/iButtonMicrophone"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <com.dnkilic.waveform.WaveView
+            android:id="@+id/siriWave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            waveview:deneme="true"
+
+            >
+
+
+        </com.dnkilic.waveform.WaveView>
+
+
+
+    </LinearLayout>
+
+
+
+    <TextSwitcher
+        android:id="@+id/txtAutoSlideSuggest"
+        android:layout_width="300dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        android:textAlignment="center" />
+
+</RelativeLayout>

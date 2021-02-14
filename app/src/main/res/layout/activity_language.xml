@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/_standart_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/_standart_bg"
+                android:padding="15dp"
+                tools:context=".activity.LanguageActivity">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieLanguages"
+                    android:layout_width="280dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/languages" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lottieLanguages"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/_choose_language_communicate_mina"
+                    android:textColor="#2D3747"
+                    android:textSize="30sp" />
+
+                <LinearLayout
+                    android:id="@+id/lnrLanguageButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView2"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnAz"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_get_started_bg"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="Azərbaycan"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnRu"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_get_started_bg"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="Русский"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnEn"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_get_started_bg"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="English"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnTr"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_get_started_bg"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="Turkish"
+                        android:textColor="@color/btn_text_color"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
+

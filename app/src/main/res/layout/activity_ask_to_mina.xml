@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_standart_bg"
+    android:padding="15dp"
+    tools:context=".activity.AskToMina">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAskToMina"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/line_wave" />
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottieAskToMina"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/_ask_to_mina"
+        android:textColor="#2D3747"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView21"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/_mina_personal_asistant"
+        android:textColor="#6E81A0"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnNextAskToMina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/btn_get_started_bg"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/_next"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_text_color"
+        android:textSize="21sp" />
+
+</RelativeLayout>
